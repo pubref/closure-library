@@ -521,7 +521,7 @@ goog.Promise.firstFulfilled = function(promises) {
  * @return {!goog.promise.Resolver<TYPE>} Resolver wrapping the promise and its
  *     resolve / reject functions. Resolving or rejecting the resolver
  *     resolves or rejects the promise.
- * @template TYPE
+ * @template TYPE,RESOLVER_CONTEXT
  */
 goog.Promise.withResolver = function(opt_context) {
   var resolve, reject;
